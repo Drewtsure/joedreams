@@ -1,13 +1,13 @@
 module.exports = function(grunt){
 
-  grunt.loadNpmTasks("grunt-contrib-less");
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.initConfig({
 
-    less: {
+    sass: {
       style: {
         files: {
-        "css/style.css": ["less/style.less"]
+          "css/style.css": ["scss/style.scss"]
         }
       }
     }

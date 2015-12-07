@@ -1,0 +1,22 @@
+{
+  "name": "joedreams",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Официальный сайт группы «Сны Джо» [ВК](https://vk.com/joedreams)",
+  "author": "Drewtsure",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Drewtsure/joedreams.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Drewtsure/joedreams/issues"
+  },
+  "homepage": "https://github.com/Drewtsure/joedreams",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-sass": "^0.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

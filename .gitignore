@@ -5,4 +5,6 @@ Thumbs.db
 *.sublime*
 *.log
 css/*.css
+*.map
 design/
+.sass-cache/
