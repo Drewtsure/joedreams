@@ -1,0 +1,68 @@
+.concerts {
+  padding: 45px 0 5px;
+
+  color: $almost-white;
+
+  background-color: #0c1319;
+  background-image: url(../images/bg_afisha.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__wr {
+    padding: 0 150px;
+
+    @include section-wr(880px);
+  }
+
+  &__title {
+    color: $almost-white;
+
+    @include section-header;
+
+    &:after {
+      background-image: url(../images/pic_afisha-feather1.png);
+    }
+  }
+
+  &__list {
+    margin-bottom: 100px;
+
+    &-title {
+      margin-bottom: 25px;
+
+      font-weight: 700;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__row {
+    height: 45px;
+
+    font-weight: 600;
+  }
+
+  &__cell {
+    &:nth-child(1) {
+      width: 215px;
+    }
+    &:nth-child(2) {
+      width: 250px;
+    }
+    &:nth-child(3) {
+      width: 285px;
+    }
+    &:nth-child(4) {
+      width: 215px;
+
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+
+  a {
+    color: $almost-white;
+    text-decoration: none;
+  }
+}

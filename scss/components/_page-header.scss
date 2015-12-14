@@ -1,0 +1,71 @@
+.page-header {
+  position: relative;
+
+  min-height: 824px;
+
+  font-weight: 800;
+  font-size: $fontsize-midheader;
+  line-height: 40px;
+  text-align: center;
+  color: $aqua;
+
+  background-color: #0d0e15;
+  background-image: url("../images/img_slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__slider-title {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+
+    margin: 0;
+
+    font-size: 24px;
+    text-transform: uppercase;
+
+    transform: translateX(-50%);
+  }
+
+  &__slider-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+
+    font-size: 0;
+    line-height: 0;
+
+    transform: translateX(-50%);
+
+    a {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin: 0 11px;
+
+      background-color: #1f98ad;
+      border-radius: 50%;
+      opacity: 0.5;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__social {
+    position: absolute;
+    top: 130px;
+    right: 0;
+
+    font-size: 0;
+
+    a {
+      display: block;
+
+      font-size: 22px;
+      color: #1f98ad;
+    }
+  }
+}

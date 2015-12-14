@@ -1,0 +1,69 @@
+@font-face {
+  font-weight: normal;
+  font-family: "fontawesome";
+  font-style: normal;
+
+  src: url("../fonts/fontawesome/fontawesome.eot?10318820#iefix") format("embedded-opentype"),
+  url("../fonts/fontawesome/fontawesome.woff?10318820") format("woff"),
+  url("../fonts/fontawesome/fontawesome.ttf?10318820") format("truetype"),
+  url("../fonts/fontawesome/fontawesome.svg?10318820#fontawesome") format("svg");
+  src: url("../fonts/fontawesome/fontawesome.eot?10318820");
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?10318820#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  font-family: "fontawesome";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+  content: "\e804";
+} /* '' */
+.icon-youtube-play:before {
+  content: "\e805";
+} /* '' */
+.icon-twitter:before {
+  content: "\e806";
+} /* '' */
+.icon-instagram:before {
+  content: "\e807";
+} /* '' */
+.icon-vkontakte:before {
+  content: "\e808";
+} /* '' */

@@ -1,0 +1,82 @@
+.media {
+  padding-top: 35px;
+  padding-bottom: 50px;
+
+  font-size: 24px;
+
+  background-image: url(../images/bg_media.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  a {
+    font-weight: 800;
+    color: $light-aqua;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__wr {
+    padding: 0 60px;
+
+    @include section-wr(1060px);
+  }
+
+  &__title {
+    color: $dark-gray;
+
+    @include section-header;
+
+    &:after {
+      background-image: url(../images/pic_media-feather.png);
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    font-size: 0;
+
+    &-item {
+      width: 265px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-descr {
+      margin-top: 15px;
+
+      font-size: 24px;
+    }
+  }
+
+  &__players {
+    @include clearfix;
+  }
+
+  &__youtube-wr {
+    float: left;
+    width: 615px;
+
+    text-align: center;
+  }
+
+  &__youtube-descr {
+    margin-top: 20px;
+  }
+
+  &__itunes-wr {
+    float: right;
+    width: 320px;
+
+    text-align: center;
+  }
+
+  &__itunes-descr {
+    margin-top: 20px;
+  }
+}

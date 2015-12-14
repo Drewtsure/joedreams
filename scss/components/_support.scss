@@ -1,0 +1,55 @@
+.support {
+  padding-bottom: 10px;
+
+  color: $dark-gray;
+
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+
+  @include clearfix;
+
+  &__title {
+    @include subtitle(500);
+  }
+  &__title--bold {
+    @include subtitle(800);
+  }
+
+  &__left {
+    float: left;
+    width: 640px;
+    padding-top: 35px;
+  }
+
+  &__right {
+    float: right;
+    width: 420px;
+    padding-top: 20px;
+
+    font-size: 0;
+    text-align: right;
+  }
+
+  &__money-wr {
+    position: relative;
+
+    display: inline-block;
+    height: 170px;
+
+    &--ya {
+      width: 191px;
+      margin-right: 50px;
+    }
+    &--web {
+      width: 150px;
+    }
+  }
+
+  &__money {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+  }
+}

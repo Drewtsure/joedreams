@@ -1,8 +1,6 @@
 module.exports = function(grunt){
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-csscomb');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
 
@@ -23,10 +21,20 @@ module.exports = function(grunt){
         }
       }
     },
+    postcss: {
+      options: {
+        processors: [
+          require('autoprefixer')({browsers: 'last 2 versions'})
+        ]
+      },
+      dist: {
+        src: 'css/*.css'
+      }
+    },
     watch: {
       css: {
         files: '**/*.scss',
-        tasks: ['sass,csscomb']
+        tasks: ['sass', 'csscomb', 'postcss']
       }
     }
   });

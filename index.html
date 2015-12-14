@@ -3,261 +3,315 @@
 <head>
   <meta charset="UTF-8">
   <title>Официальный сайт группы «Сны Джо»</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <ul>
-        <li class="main-nav__item"><a href="">О группе</a></li>
-        <li class="main-nav__item"><a href="">Концерты</a></li>
-        <li class="main-nav__item"><a href="">Медиа</a></li>
-        <li class="main-nav__item"><a href="">Магазин</a></li>
-        <li class="main-nav__item"><a href="">Контакты</a></li>
-        <li class="main-nav__item"><a href="">Корзина</a></li>
-      </ul>
-    </nav>
-    <div class="page-header__slider">
-      <div class="page-header__slider-item">
+  <div class="page-wr">
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__item"><a href="">О группе</a></li>
+          <li class="main-nav__item"><a href="">Концерты</a></li>
+          <li class="main-nav__item"><a href="">Медиа</a></li>
+          <li class="main-nav__item"><a href="">Магазин</a></li>
+          <li class="main-nav__item"><a href="">Контакты</a></li>
+          <li class="main-nav__item"><a href="">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="page-header__slider">
+        <div class="page-header__slider-item">
+        </div>
+        <div class="page-header__slider-item">
+        </div>
+        <div class="page-header__slider-item">
+        </div>
+        <h2 class="page-header__slider-title">Чудо всегда рядом с тобой!</h2>
+        <div class="page-header__slider-nav">
+          <a href=""></a>
+          <a class="active" href=""></a>
+          <a href=""></a>
+        </div>
+      </div>
+      <div class="page-header__social">
+        <a href="" class="page-header__social-item"><i class="icon-vkontakte"></i></a>
+        <a href="" class="page-header__social-item"><i class="icon-youtube-play"></i></a>
+        <a href="" class="page-header__social-item"><i class="icon-instagram"></i></a>
+      </div>
+    </header>
+    <main>
+      <section class="about-band">
+        <div class="about-band__wr">
+          <h2 class="about-band__title">О группе</h2>
+          <div class="about-band__tabs-wr">
+            <div class="about-band__tabs-control">
+              <input class="about-band__tabs-radio" type="radio" name="tabs-radio" id="kindmen" checked>
+              <label class="about-band__tabs-nav" for="kindmen" >Питерские добряки</label>
+              <input class="about-band__tabs-radio" type="radio" name="tabs-radio" id="joepresent">
+              <label class="about-band__tabs-nav" for="joepresent" >Явь Джо</label>
+              <input class="about-band__tabs-radio" type="radio" name="tabs-radio" id="fansaboutus">
+              <label class="about-band__tabs-nav" for="fansaboutus" >Отзывы</label>
+              <input class="about-band__tabs-radio" type="radio" name="tabs-radio" id="smiaboutus">
+              <label class="about-band__tabs-nav" for="smiaboutus" >СМИ о нас</label>
+              <input class="about-band__tabs-radio" type="radio" name="tabs-radio" id="textsaccords">
+              <label class="about-band__tabs-nav" for="textsaccords" >Тексты и аккорды</label>
+            </div>
+            <div class="about-band__block about-band__block--kindmen">
+              <h3 class="about-band__block-title">Здесь будет размешена информация о группе</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reprehenderit, nemo sequi, possimus assumenda tenetur. Deserunt praesentium deleniti temporibus quaerat, earum dolorem voluptatibus ex et nostrum repudiandae cumque, tempora obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="about-band__musicians-wr">
+                <div class="about-band__musician">
+                  <div class="about-band__musician-photo about-band__musician-photo--vocals">
+                    <img src="images/img_musician-photo-vocals.png" alt="" class="about-band__musician-img">
+                  </div>
+                  <div class="about-band__musician-more">
+                    <div class="about-band__musician-role">Вокал, ритм-гитара</div>
+                    <div class="about-band__musician-name">Евгений Ислямов</div>
+                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure alias id, non vero aliquam, ipsa ipsam nihil consequuntur minima, odio ad doloribus soluta quisquam eius! Neque in, quasi voluptates modi!</div>
+                  </div>
+                </div>
+                <div class="about-band__musician">
+                  <div class="about-band__musician-photo about-band__musician-photo--solo">
+                    <img src="images/img_musician-photo-solo.png" alt="" class="about-band__musician-img">
+                  </div>
+                  <div class="about-band__musician-more">
+                    <div class="about-band__musician-role">Соло-гитара</div>
+                    <div class="about-band__musician-name">Андрей Савкин</div>
+                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in ullam delectus atque exercitationem tempora laborum veniam similique impedit, nulla eaque assumenda. Repudiandae neque hic repellat optio sunt a, impedit.</div>
+                  </div>
+                </div>
+                <div class="about-band__musician">
+                  <div class="about-band__musician-photo about-band__musician-photo--bass">
+                    <img src="images/img_musician-photo-bass.png" alt="" class="about-band__musician-img">
+                  </div>
+                  <div class="about-band__musician-more">
+                    <div class="about-band__musician-role">Бас-гитара</div>
+                    <div class="about-band__musician-name">Денис Колодин</div>
+                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates consectetur at possimus accusamus ipsam, earum adipisci, eaque ut nobis nemo natus impedit provident doloribus dignissimos! Natus ducimus, suscipit ipsam laudantium.</div>
+                  </div>
+                </div>
+                <div class="about-band__musician">
+                  <div class="about-band__musician-photo about-band__musician-photo--drums">
+                    <img src="images/img_musician-photo-drums.png" alt="" class="about-band__musician-img">
+                  </div>
+                  <div class="about-band__musician-more">
+                    <div class="about-band__musician-role">Ударные</div>
+                    <div class="about-band__musician-name">Алексей Астратков</div>
+                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo, eos soluta, voluptate excepturi officiis sit numquam temporibus eius reiciendis fuga culpa tempore fugiat nam blanditiis suscipit magni nisi. Animi.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-band__block about-band__block--joepresent">
 
-      </div>
-      <div class="page-header__slider-item">
+            </div>
+            <div class="about-band__block about-band__block--fansaboutus">
 
-      </div>
-      <div class="page-header__slider-item">
+            </div>
+            <div class="about-band__block about-band__block--smiaboutus">
 
-      </div>
-      <h2 class="page-header__slider-title">Чудо всегда рядом с тобой</h2>
-      <div class="page-header__slider-nav">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-      </div>
-    </div>
-    <div class="page-header__social">
-      <a href="" class="page-header__social-item"></a>
-      <a href="" class="page-header__social-item"></a>
-      <a href="" class="page-header__social-item"></a>
-      <a href="" class="page-header__social-item"></a>
-      <a href="" class="page-header__social-item"></a>
-    </div>
-  </header>
-  <main>
-    <section class="about-band">
-      <h2 class="about-band__title">О группе</h2>
-      <div class="about-band__tabs-wr">
-        <label for="kindmen" class="about-band__tabs-nav">Питерские добряки</label>
-        <input type="checkbox" name="" id="kindmen">
-        <label for="joepresent" class="about-band__tabs-nav">Явь Джо</label>
-        <input type="checkbox" name="" id="joepresent">
-        <label for="fansaboutus" class="about-band__tabs-nav">Отзывы</label>
-        <input type="checkbox" name="" id="fansaboutus">
-        <label for="smiaboutus" class="about-band__tabs-nav">СМИ о нас</label>
-        <input type="checkbox" name="" id="smiaboutus">
-        <div class="about-band__block about-band__block--kindmen">
-          <h3 class="about-band__block-title">Здесь будет размешена информация о группе</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reprehenderit, nemo sequi, possimus assumenda tenetur. Deserunt praesentium deleniti temporibus quaerat, earum dolorem voluptatibus ex et nostrum repudiandae cumque, tempora obcaecati?</p>
-          <div class="about-band__musician">
-            <div class="about-band__musician-photo about-band__musician-photo--vocals">
-              <img src="images/img_musician-photo-vocals.png" alt="" class="about-band__musician-img">
-            </div>
-            <div class="about-band__musician-more">
-              <div class="about-band__musician-role">Вокал, ритм-гитара</div>
-              <div class="about-band__musician-name">Евгений Ислямов</div>
-              <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure alias id, non vero aliquam, ipsa ipsam nihil consequuntur minima, odio ad doloribus soluta quisquam eius! Neque in, quasi voluptates modi!</div>
-            </div>
-          </div>
-          <div class="about-band__musician">
-            <div class="about-band__musician-photo about-band__musician-photo--solo">
-              <img src="images/img_musician-photo-solo.png" alt="" class="about-band__musician-img">
-            </div>
-            <div class="about-band__musician-more">
-              <div class="about-band__musician-role">Соло-гитара</div>
-              <div class="about-band__musician-name">Андрей Савкин</div>
-              <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in ullam delectus atque exercitationem tempora laborum veniam similique impedit, nulla eaque assumenda. Repudiandae neque hic repellat optio sunt a, impedit.</div>
-            </div>
-          </div>
-          <div class="about-band__musician">
-            <div class="about-band__musician-photo about-band__musician-photo--bass">
-              <img src="images/img_musician-photo-bass.png" alt="" class="about-band__musician-img">
-            </div>
-            <div class="about-band__musician-more">
-              <div class="about-band__musician-role">Бас-гитара</div>
-              <div class="about-band__musician-name">Денис Колодин</div>
-              <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates consectetur at possimus accusamus ipsam, earum adipisci, eaque ut nobis nemo natus impedit provident doloribus dignissimos! Natus ducimus, suscipit ipsam laudantium.</div>
-            </div>
-          </div>
-          <div class="about-band__musician">
-            <div class="about-band__musician-photo about-band__musician-photo--drums">
-              <img src="images/img_musician-photo-drums.png" alt="" class="about-band__musician-img">
-            </div>
-            <div class="about-band__musician-more">
-              <div class="about-band__musician-role">Ударные</div>
-              <div class="about-band__musician-name">Алексей Астратков</div>
-              <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo, eos soluta, voluptate excepturi officiis sit numquam temporibus eius reiciendis fuga culpa tempore fugiat nam blanditiis suscipit magni nisi. Animi.</div>
             </div>
           </div>
         </div>
-        <div class="about-band__block about-band__block--joepresent">
-
-        </div>
-        <div class="about-band__block about-band__block--fansaboutus">
-
-        </div>
-        <div class="about-band__block about-band__block--smiaboutus">
-
-        </div>
-      </div>
-    </section>
-    <section class="concerts">
-      <h2 class="concerts--title">Концерты</h2>
-      <div class="concerts__list concerts__list--past">
-        <div class="concerts__list-title">Предстоящие</div>
-        <table class="concerts__list-table">
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">12 декабря 2015</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">Клуб «Улитка на склоне»</td>
-            <td class="concerts__list-cell">Купить билет</td>
-          </tr>
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">25 ноября 2015</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">Бар GYPSY</td>
-            <td class="concerts__list-cell">Купить билет</td>
-          </tr>
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">17 сентября 2015</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">PHOENIX CONCERT HALL</td>
-            <td class="concerts__list-cell">Купить билет</td>
-          </tr>
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">31 августа 2015</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">HUSKY BAR</td>
-            <td class="concerts__list-cell">Купить билет</td>
-          </tr>
-        </table>
-      </div>
-      <div class="concerts__list concerts__list--future">
-        <div class="concerts__list-title"></div>
-        <table class="concerts__list-table">
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">14 апреля</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">HUSKY BAR</td>
-            <td class="concerts__list-cell">Смотреть</td>
-          </tr>
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">5 мая</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">Бар GYPSY</td>
-            <td class="concerts__list-cell">Смотреть</td>
-          </tr>
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">11 июня</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">Клуб «Улитка на склоне»</td>
-            <td class="concerts__list-cell">Смотреть</td>
-          </tr>
-          <tr class="concerts__list-row">
-            <td class="concerts__list-cell">25 июля</td>
-            <td class="concerts__list-cell">Санкт-Петербург</td>
-            <td class="concerts__list-cell">PHOENIX CONCERT HALL</td>
-            <td class="concerts__list-cell">Смотреть</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <section class="media">
-      <h2 class="media__title"></h2>
-      <div class="media__gallery">
-        <div class="media__gallery-item"><img src="images/img_gallery-photo-1.jpg" alt="" class="media__gallery-photo"></div>
-        <div class="media__gallery-descr">Больше красивых и разных фотографий можно увидеть в нашей группе <a href="">ВКОНТАКТЕ</a></div>
-      </div>
-      <div class="media__youtube-wr">
-        <img src="images/img_youtube-player.jpg" alt="" class="media__youtube-player">
-        <div class="media__youtube-descr"></div>
-      </div>
-      <div class="media__itunes-wr">
-        <img src="images/img_itunes-player.jpg" alt="" class="media__itunes-player">
-        <div class="img media__itunes-descr"></div>
-      </div>
-    </section>
-    <section class="shop">
-      <h2 class="shop__title"></h2>
-      <div class="shop__list">
-        <article class="shop__item">
-          <img src="images/img_shop-item-1.jpg" alt="" class="shop__item-img">
-          <h3 class="shop__item-title"></h3>
-          <div class="shop__item-descr"></div>
-          <div class="shop__item-buy">
-            <div class="shop__item-price"></div>
-            <div class="shop__item-buy-button"></div>
+      </section>
+      <section class="concerts">
+        <div class="concerts__wr">
+          <h2 class="concerts__title">Концерты</h2>
+          <div class="concerts__list concerts__list--future">
+            <div class="concerts__list-title">Предстоящие</div>
+            <table class="concerts__table">
+              <tr class="concerts__row">
+                <td class="concerts__cell">12 декабря 2015</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">Клуб «Улитка на склоне»</td>
+                <td class="concerts__cell"><a href="">Купить билет</a></td>
+              </tr>
+              <tr class="concerts__row">
+                <td class="concerts__cell">25 ноября 2015</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">Бар GYPSY</td>
+                <td class="concerts__cell"><a href="">Купить билет</a></td>
+              </tr>
+              <tr class="concerts__row">
+                <td class="concerts__cell">17 сентября 2015</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">PHOENIX CONCERT HALL</td>
+                <td class="concerts__cell"><a href="">Купить билет</a></td>
+              </tr>
+              <tr class="concerts__row">
+                <td class="concerts__cell">31 августа 2015</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">HUSKY BAR</td>
+                <td class="concerts__cell"><a href="">Купить билет</a></td>
+              </tr>
+            </table>
           </div>
-        </article>
-        <article class="shop__item">
-          <img src="images/img_shop-item-2.jpg" alt="" class="shop__item-img">
-          <h3 class="shop__item-title"></h3>
-          <div class="shop__item-descr"></div>
-          <div class="shop__item-buy">
-            <div class="shop__item-price"></div>
-            <div class="shop__item-buy-button"></div>
+          <div class="concerts__list concerts__list--past">
+            <div class="concerts__list-title">Прошедшие</div>
+            <table class="concerts__table">
+              <tr class="concerts__row">
+                <td class="concerts__cell">14 апреля</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">HUSKY BAR</td>
+                <td class="concerts__cell"><a href="">Смотреть</a></td>
+              </tr>
+              <tr class="concerts__row">
+                <td class="concerts__cell">5 мая</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">Бар GYPSY</td>
+                <td class="concerts__cell"><a href="">Смотреть</a></td>
+              </tr>
+              <tr class="concerts__row">
+                <td class="concerts__cell">11 июня</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">Клуб «Улитка на склоне»</td>
+                <td class="concerts__cell"><a href="">Смотреть</a></td>
+              </tr>
+              <tr class="concerts__row">
+                <td class="concerts__cell">25 июля</td>
+                <td class="concerts__cell">Санкт-Петербург</td>
+                <td class="concerts__cell">PHOENIX CONCERT HALL</td>
+                <td class="concerts__cell"><a href="">Смотреть</a></td>
+              </tr>
+            </table>
           </div>
-        </article>
-        <article class="shop__item">
-          <img src="images/img_shop-item-3.jpg" alt="" class="shop__item-img">
-          <h3 class="shop__item-title"></h3>
-          <div class="shop__item-descr"></div>
-          <div class="shop__item-buy">
-            <div class="shop__item-price"></div>
-            <div class="shop__item-buy-button"></div>
+        </div>
+      </section>
+      <section class="media">
+        <div class="media__wr">
+          <h2 class="media__title">Медиа</h2>
+          <div class="media__gallery">
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-1.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-2.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-3.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-4.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-5.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-6.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-7.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-item">
+              <img src="images/img_gallery-photo-8.jpg" alt="" class="media__gallery-photo">
+            </div>
+            <div class="media__gallery-descr">Больше красивых и разных фотографий можно увидеть в нашей группе <a href="https://vk.com/albums-40490539">ВКОНТАКТЕ</a></div>
           </div>
-        </article>
-      </div>
-      <div class="shop__link-wr"><a href="" class="shop__link"></a></div>
-    </section>
-    <sectiom class="contacts">
-      <div class="contacts__descr">
-        <h2 class="contacts__title">Контакты</h2>
-        <h3 class="cotacts__subtitle contacts__subtitle--bold">С нами легко связаться</h3>
-        <h3 class="cotacts__subtitle">Здесь будет размещена подробная контактная информация</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, recusandae labore nobis temporibus neque corporis veritatis alias tempora culpa aperiam, fugit harum. Iusto eum fugiat asperiores a, deleniti ratione dolore!</p>
-      </div>
-      <div class="contacts__form-wr">
-        <form action="" class="contacts__form">
-          <label class="contacts__form-label" for="user-name">Ваше имя</label>
-          <input class="contacts__form-input" type="text" name="" id="user-name">
-          <label class="contacts__form-label" for="user-contact">Телефон или e-mail</label>
-          <input class="contacts__form-input" type="text" name="" id="user-contact">
-          <label class="contacts__form-label" for="user-message">Ваше сообщение</label>
-          <textarea class="contacts__form-textarea" name="" id="user-message" cols="30" rows="10"></textarea>
-          <input type="submit" value="Отправить">
-        </form>
-      </div>
-    </sectiom>
+          <div class="media__players">
+            <div class="media__youtube-wr">
+              <img src="images/img_youtube-player.jpg" alt="" class="media__youtube-player">
+              <div class="media__youtube-descr">Cны Джо на <a href="https://www.youtube.com/channel/UC0S2B2CoVF6gOToyZH0rETw">Youtube</a></div>
+            </div>
+            <div class="media__itunes-wr">
+              <img src="images/img_itunes-player.jpg" alt="" class="media__itunes-player">
+              <div class="img media__itunes-descr">Наша музыка на <a href="https://itunes.apple.com/ru/artist/sny-dzo/id951421972">iTunes</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="shop__wr">
+          <h2 class="shop__title">Магазин</h2>
+          <div class="shop__list">
+            <article class="shop__item">
+              <img src="images/img_shop-item-1.jpg" alt="" class="shop__item-img">
+              <div class="shop__item-descr">
+                <h3 class="shop__item-title">Кружка «Чудо»</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
+                <div class="shop__item-buy">
+                  <div class="shop__item-price">200 руб.</div>
+                  <a href="#" class="shop__item-buybtn">Купить</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__item">
+              <img src="images/img_shop-item-2.jpg" alt="" class="shop__item-img">
+              <div class="shop__item-descr">
+                <h3 class="shop__item-title">Альбом «Чудо»</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
+                <div class="shop__item-buy">
+                  <div class="shop__item-price">300 руб.</div>
+                  <a href="#" class="shop__item-buybtn">Купить</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__item">
+              <img src="images/img_shop-item-3.jpg" alt="" class="shop__item-img">
+              <div class="shop__item-descr">
+                <h3 class="shop__item-title">Футболка «Чудо»</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
+                <div class="shop__item-buy">
+                  <div class="shop__item-price">600 руб.</div>
+                  <a href="#" class="shop__item-buybtn">Купить</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="shop__link-wr"><a href="" class="shop__link">Посмотреть, что есть ещё</a></div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wr">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__descr">
+            <h3 class="contacts__subtitle contacts__subtitle--bold">С нами легко связаться</h3>
+            <h3 class="contacts__subtitle">Здесь будет размещена подробная контактная информация</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, recusandae labore nobis temporibus neque corporis veritatis alias tempora culpa aperiam, fugit harum. Iusto eum fugiat asperiores a, deleniti ratione dolore!</p>
+          </div>
+          <div class="contacts__form-wr">
+            <form action="" class="contacts__form">
+              <label class="contacts__form-label" for="user-name">Ваше имя</label>
+              <input class="contacts__form-input" type="text" name="" id="user-name">
+              <label class="contacts__form-label" for="user-contact">Телефон или e-mail</label>
+              <input class="contacts__form-input" type="text" name="" id="user-contact">
+              <label class="contacts__form-label" for="user-message">Ваше сообщение</label>
+              <textarea class="contacts__form-textarea" name="" id="user-message" cols="30" rows="5"></textarea>
+              <input class="contacts__submit" type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="page-footer">
-      <div class="support">
-        <div class="support-left">
-          <h3 class="support__title support__title--bold"></h3>
-          <h3 class="support__title"></h3>
+      <div class="page-footer__wr">
+        <div class="support">
+          <div class="support__left">
+            <h3 class="support__title support__title--bold">Поддержите нас!</h3>
+            <h3 class="support__title">Если вам нравится наша музыка, переведите любую сумму через удобный для вас сервис</h3>
+          </div>
+          <div class="support__right">
+            <div class="support__money-wr support__money-wr--ya">
+              <a href="" class="support__money"><img src="images/pic_yandex-money.jpg" alt="Яндекс Деньги"></a>
+            </div>
+            <div class="support__money-wr support__money-wr--web">
+              <a href="" class="support__money"><img src="images/pic_web-money.jpg" alt="Webmoney"></a>
+            </div>
+          </div>
         </div>
-        <div class="support-right"><a href="" class="support__yamoney"></a><a href="" class="support__webmoney"></a></div>
-      </div>
-      <div class="page-footer__contacts">
-        <div class="page-footer__copyright">©2015 Сны Джо</div>
-        <div class="page-footer__contacts">Организация концертов: happyjoedreams@gmail.com  +7 911 734-09-23</div>
-        <div class="page-footer__social">
-          <a href="" class="page-footer__social-item"></a>
-          <a href="" class="page-footer__social-item"></a>
-          <a href="" class="page-footer__social-item"></a>
-          <a href="" class="page-footer__social-item"></a>
-          <a href="" class="page-footer__social-item"></a>
+        <div class="page-footer__contacts-wr">
+          <div class="page-footer__copyright">©2015 Сны Джо</div>
+          <div class="page-footer__contacts">
+            Организация концертов:
+            <a href="mailto:happyjoedreams@gmail.com">happyjoedreams@gmail.com</a>
+            <a href="tel:+79117340923">+7 911 734-09-23</a>
+          </div>
+          <div class="page-footer__social">
+            <a href="" class="page-footer__social-item"><i class="icon-vkontakte"></i></a>
+            <a href="" class="page-footer__social-item"><i class="icon-youtube-play"></i></a>
+            <a href="" class="page-footer__social-item"><i class="icon-instagram"></i></a>
+          </div>
         </div>
       </div>
     </footer>
-  </main>
+  </div>
 </body>
 </html>

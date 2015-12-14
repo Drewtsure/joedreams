@@ -1,0 +1,96 @@
+.contacts {
+  padding-top: 35px;
+  padding-bottom: 25px;
+
+  color: $dark-gray;
+
+  background-color: $almost-white;
+  background-image: url(../images/bg_contacts.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @include clearfix;
+
+  &__wr {
+    padding: 0 60px;
+
+    @include section-wr(1060px);
+    @include clearfix;
+  }
+
+  &__title {
+    color: $dark-gray;
+
+    @include section-header;
+
+    &:after {
+      background-image: url(../images/pic_contacts-feather.png);
+    }
+  }
+
+  &__descr {
+    float: left;
+    width: 520px;
+  }
+
+  &__subtitle {
+    @include subtitle(500);
+  }
+
+  &__subtitle--bold {
+    @include subtitle(800);
+  }
+
+  p {
+    @include upperp;
+  }
+
+  &__form-wr {
+    float: right;
+    width: 500px;
+  }
+
+  &__form-label {
+    display: block;
+
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    display: block;
+    width: 476px;
+    padding: 0 10px;
+
+    font-size: 24px;
+    line-height: 40px;
+
+    border: 2px solid $light-aqua;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.2);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form-textarea {
+    resize: vertical;
+  }
+
+  &__submit {
+    float: right;
+    margin-top: 25px;
+    padding: 11px 20px;
+
+    font-weight: 800;
+    font-size: 24px;
+    color: $white;
+
+    background-color: $light-aqua;
+    border: none;
+    border-radius: 3px;
+  }
+}

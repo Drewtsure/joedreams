@@ -1,0 +1,96 @@
+.shop {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: #3a3843;
+  background-image: url(../images/bg_shop.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__wr {
+    padding: 0 60px;
+
+    @include section-wr(1060px);
+  }
+
+  &__title {
+    color: $white;
+
+    @include section-header;
+
+    &:after {
+      background-image: url(../images/pic_shop-feather.png);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    width: 280px;
+    padding: 16px 15px 30px;
+
+    color: $dark-gray;
+    text-transform: uppercase;
+
+    background: $white;
+
+    img {
+      width: 280px;
+      height: 206px;
+      margin-bottom: 20px;
+    }
+
+    &-descr {
+      padding: 0 24px;
+
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-title {
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    &-buy {
+      @include clearfix;
+    }
+
+    &-price {
+      float: left;
+      padding: 10px 0;
+
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: lowercase;
+    }
+
+    &-buybtn {
+      float: right;
+      padding: 10px;
+
+      color: $white;
+      text-decoration: none;
+
+      background-color: $light-aqua;
+    }
+  }
+
+  &__link-wr {
+    text-align: center;
+
+    a {
+      font-weight: 800;
+      font-size: 24px;
+      color: $light-aqua;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

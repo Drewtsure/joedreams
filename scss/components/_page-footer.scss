@@ -1,0 +1,32 @@
+.page-footer {
+  background-color: $almost-white;
+
+  &__wr {
+    padding: 0 60px;
+
+    @include section-wr(1060px);
+  }
+
+  &__contacts-wr {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+
+  &__contacts {
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    &-item {
+      display: inline-block;
+
+      font-size: 22px;
+      color: #5e6c7b;
+      text-decoration: none;
+    }
+  }
+}

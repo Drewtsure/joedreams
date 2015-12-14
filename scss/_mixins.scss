@@ -1,0 +1,52 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin section-header {
+  position: relative;
+
+  margin-bottom: 85px;
+
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+
+    display: block;
+    width: 310px;
+    height: 54px;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin section-wr ($width) {
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin subtitle ($font-weight) {
+  font-weight: $font-weight;
+  font-size: 24px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+@mixin upperp {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
