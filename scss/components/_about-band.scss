@@ -9,6 +9,8 @@
   background-position: center top;
   background-size: cover;
 
+  @include minwidth;
+
   &__wr {
     @include section-wr(1180px);
   }

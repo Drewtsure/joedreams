@@ -9,6 +9,8 @@
   background-position: center top;
   background-size: cover;
 
+  @include minwidth;
+
   a {
     font-weight: 800;
     color: $light-aqua;

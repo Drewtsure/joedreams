@@ -10,13 +10,14 @@
   background-position: center top;
   background-size: cover;
 
+  @include minwidth;
   @include clearfix;
 
   &__wr {
     padding: 0 60px;
 
-    @include section-wr(1060px);
     @include clearfix;
+    @include section-wr(1060px);
   }
 
   &__title {
