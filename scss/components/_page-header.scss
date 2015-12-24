@@ -58,15 +58,17 @@
 
   &__social {
     position: absolute;
-    top: 130px;
-    right: 0;
+    top: 155px;
+    right: 32px;
 
     font-size: 0;
 
     a {
       display: block;
+      margin-bottom: 20px;
 
       font-size: 22px;
+      line-height: 22px;
       color: #1f98ad;
     }
   }
