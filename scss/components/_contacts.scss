@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 35px;
+  padding-top: $sectionPaddingTop;
   padding-bottom: 25px;
 
   color: $dark-gray;
@@ -44,6 +44,10 @@
   }
 
   p {
+    @include upperp;
+  }
+
+  ul  {
     @include upperp;
   }
 

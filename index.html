@@ -9,14 +9,14 @@
 <body>
   <div class="page-wr">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav" id="main-menu">
         <ul>
-          <li class="main-nav__item"><a href="">О группе</a></li>
-          <li class="main-nav__item"><a href="">Концерты</a></li>
-          <li class="main-nav__item"><a href="">Медиа</a></li>
-          <li class="main-nav__item"><a href="">Магазин</a></li>
-          <li class="main-nav__item"><a href="">Контакты</a></li>
-          <li class="main-nav__item"><a href="">Корзина</a></li>
+          <li class="main-nav__item"><a href="#aboutUs">О группе</a></li>
+          <li class="main-nav__item"><a href="#concerts">Концерты</a></li>
+          <li class="main-nav__item"><a href="#media">Медиа</a></li>
+          <li class="main-nav__item"><a href="#shop">Магазин</a></li>
+          <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+          <!-- <li class="main-nav__item"><a href="">Корзина</a></li> -->
         </ul>
       </nav>
       <div class="page-header__slider">
@@ -42,7 +42,7 @@
     <main>
       <section class="about-band">
         <div class="about-band__wr">
-          <h2 class="about-band__title">О группе</h2>
+          <h2 class="about-band__title" id="aboutUs">О группе</h2>
           <div class="about-band__tabs-wr">
             <ul id="tabs-control" class="about-band__tabs-control">
               <li class="about-band__tabs-nav about-band__tabs-nav--active"><a href="#kindmen">Питерские добряки</a></li>
@@ -52,17 +52,17 @@
               <li class="about-band__tabs-nav"><a href="#textschords">Тексты и аккорды</a></li>
             </ul>
             <div class="about-band__block about-band__block--active" id="kindmen">
-              <h3 class="about-band__block-title">Здесь будет размешена информация о группе</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque reprehenderit, nemo sequi, possimus assumenda tenetur. Deserunt praesentium deleniti temporibus quaerat, earum dolorem voluptatibus ex et nostrum repudiandae cumque, tempora obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h3 class="about-band__block-title">Наша цель - причинять добро!</h3>
+              <p>Сны Джо  –  это 4 романтика, играющие добрый и искренний поп-рок. Мы не следуем трендам и модным течениям. Мы поем о том, что внутри нас.  А там – настоящее чудо!  Мы стремимся генерировать радость и заставлять  как можно больше людей улыбаться!!  Приходите на  наш концерт и убедитесь  лично :)</p>
               <div class="about-band__musicians-wr">
                 <div class="about-band__musician">
                   <div class="about-band__musician-photo about-band__musician-photo--vocals">
                     <img src="images/img_musician-photo-vocals.png" alt="" class="about-band__musician-img">
                   </div>
                   <div class="about-band__musician-more">
-                    <div class="about-band__musician-role">Вокал, ритм-гитара</div>
-                    <div class="about-band__musician-name">Евгений Ислямов</div>
-                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure alias id, non vero aliquam, ipsa ipsam nihil consequuntur minima, odio ad doloribus soluta quisquam eius! Neque in, quasi voluptates modi!</div>
+                    <div class="about-band__musician-role">Вокал, гитара</div>
+                    <div class="about-band__musician-name">Ислямов Евгений</div>
+                    <div class="about-band__musician-desrc">Фронтмен группы. Два ноль семь метра обаяния. Слегка наклоняется, выходя из гримерки. 3 года был уличным музыкантом, а потом взял и выпустил альбом со своей группой.</div>
                   </div>
                 </div>
                 <div class="about-band__musician">
@@ -71,8 +71,8 @@
                   </div>
                   <div class="about-band__musician-more">
                     <div class="about-band__musician-role">Соло-гитара</div>
-                    <div class="about-band__musician-name">Андрей Савкин</div>
-                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in ullam delectus atque exercitationem tempora laborum veniam similique impedit, nulla eaque assumenda. Repudiandae neque hic repellat optio sunt a, impedit.</div>
+                    <div class="about-band__musician-name">Савкин Андрей</div>
+                    <div class="about-band__musician-desrc">Умудряется виртуозно попадать по струнам своими нехудененькими пальчиками. Любит полежать на полу во время строчки «если хочешь спи».</div>
                   </div>
                 </div>
                 <div class="about-band__musician">
@@ -81,8 +81,8 @@
                   </div>
                   <div class="about-band__musician-more">
                     <div class="about-band__musician-role">Бас-гитара</div>
-                    <div class="about-band__musician-name">Денис Колодин</div>
-                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates consectetur at possimus accusamus ipsam, earum adipisci, eaque ut nobis nemo natus impedit provident doloribus dignissimos! Natus ducimus, suscipit ipsam laudantium.</div>
+                    <div class="about-band__musician-name">Колодин Денис</div>
+                    <div class="about-band__musician-desrc">Харизматичный бородач и мультиинструменталист. Всегда играет на басу в белой перчатке, добавляя интриги к своему образу. Хотя, это просто белая перчатка.</div>
                   </div>
                 </div>
                 <div class="about-band__musician">
@@ -92,7 +92,7 @@
                   <div class="about-band__musician-more">
                     <div class="about-band__musician-role">Ударные</div>
                     <div class="about-band__musician-name">Алексей Астратков</div>
-                    <div class="about-band__musician-desrc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo, eos soluta, voluptate excepturi officiis sit numquam temporibus eius reiciendis fuga culpa tempore fugiat nam blanditiis suscipit magni nisi. Animi.</div>
+                    <div class="about-band__musician-desrc">Ритм и драйв нашей группы. Человек, которого всегда не видно на фотографиях. Обычно угрюм, но под песню «чудо» расплывается в улыбке.</div>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@
       </section>
       <section class="concerts">
         <div class="concerts__wr">
-          <h2 class="concerts__title">Концерты</h2>
+          <h2 class="concerts__title" id="concerts">Концерты</h2>
           <div class="concerts__list concerts__list--future">
             <div class="concerts__list-title">Предстоящие</div>
             <table class="concerts__table">
@@ -177,7 +177,7 @@
       </section>
       <section class="media">
         <div class="media__wr">
-          <h2 class="media__title">Медиа</h2>
+          <h2 class="media__title" id="media">Медиа</h2>
           <div class="media__gallery">
             <div class="media__gallery-item">
               <img src="images/img_gallery-photo-1.jpg" alt="" class="media__gallery-photo">
@@ -207,7 +207,8 @@
           </div>
           <div class="media__players">
             <div class="media__youtube-wr">
-              <img src="images/img_youtube-player.jpg" alt="" class="media__youtube-player">
+              <!-- <img src="images/img_youtube-player.jpg" alt="" class="media__youtube-player"> -->
+              <iframe width="613" height="316" src="https://www.youtube.com/embed/wx-S_e7QDVg" frameborder="0" allowfullscreen></iframe>
               <div class="media__youtube-descr">Cны Джо на <a href="https://www.youtube.com/channel/UC0S2B2CoVF6gOToyZH0rETw" target="_blank">Youtube</a></div>
             </div>
             <div class="media__itunes-wr">
@@ -219,52 +220,63 @@
       </section>
       <section class="shop">
         <div class="shop__wr">
-          <h2 class="shop__title">Магазин</h2>
+          <h2 class="shop__title" id="shop">Магазин</h2>
           <div class="shop__list">
             <article class="shop__item">
-              <img src="images/img_shop-item-1.jpg" alt="" class="shop__item-img">
+              <img src="https://pp.vk.me/c631229/v631229023/63e7/3_OhPbz9lMw.jpg" alt="" class="shop__item-img">
               <div class="shop__item-descr">
-                <h3 class="shop__item-title">Кружка «Чудо»</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
-                <div class="shop__item-buy">
-                  <div class="shop__item-price">200 руб.</div>
-                  <a href="#" class="shop__item-buybtn">Купить</a>
+                <div>
+                  <h3 class="shop__item-title">Альбом "ГРАНИ" (2015)</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
                 </div>
-              </div>
-            </article>
-            <article class="shop__item">
-              <img src="images/img_shop-item-2.jpg" alt="" class="shop__item-img">
-              <div class="shop__item-descr">
-                <h3 class="shop__item-title">Альбом «Чудо»</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
                 <div class="shop__item-buy">
                   <div class="shop__item-price">300 руб.</div>
-                  <a href="#" class="shop__item-buybtn">Купить</a>
+                  <a href="https://new.vk.com/market-40490539?w=product-40490539_76880" class="shop__item-buybtn" target="_blank">Купить</a>
                 </div>
               </div>
             </article>
             <article class="shop__item">
-              <img src="images/img_shop-item-3.jpg" alt="" class="shop__item-img">
+              <img src="https://pp.vk.me/c625231/v625231023/47b39/nIvJuQg94dA.jpg" alt="" class="shop__item-img">
               <div class="shop__item-descr">
-                <h3 class="shop__item-title">Футболка «Чудо»</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit recusandae, omnis, labore dignissimos ab, aliquam harum tenetur.</p>
+                <div>
+                  <h3 class="shop__item-title">Футболка самого крутого фаната (белая)</h3>
+                  <p>Футболки с эксклюзивным дизайном и символом группы - ловцом снов! Износостойкие и приятные на ощупь :) В наличие - все размеры!</p>
+                </div>
+                <div class="shop__item-buy">
+                  <div class="shop__item-price">800 руб.</div>
+                  <a href="https://new.vk.com/market-40490539?w=product-40490539_20696" class="shop__item-buybtn" target="_blank">Купить</a>
+                </div>
+              </div>
+            </article>
+            <article class="shop__item">
+              <img src="https://pp.vk.me/c625231/v625231023/47b71/haI-d6rgBNk.jpg" alt="" class="shop__item-img">
+              <div class="shop__item-descr">
+                <div>
+                  <h3 class="shop__item-title">Блокнот "Чудо"</h3>
+                  <p>Блокнот для мыслей и рисунков, навеянных нашими песнями. Теперь можете носить ЧУДО с собой!)</p>
+                  <p>Листы белые, нелинованные. Формат&nbsp;А5</p>
+                </div>
                 <div class="shop__item-buy">
                   <div class="shop__item-price">600 руб.</div>
-                  <a href="#" class="shop__item-buybtn">Купить</a>
+                  <a href="https://new.vk.com/market-40490539?w=product-40490539_20700" class="shop__item-buybtn" target="_blank">Купить</a>
                 </div>
               </div>
             </article>
           </div>
-          <div class="shop__link-wr"><a href="" class="shop__link">Посмотреть, что есть ещё</a></div>
+          <div class="shop__link-wr"><a href="https://vk.com/market-40490539" class="shop__link" target="_blank">Посмотреть, что есть ещё</a></div>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wr">
-          <h2 class="contacts__title">Контакты</h2>
+          <h2 class="contacts__title" id="contacts">Контакты</h2>
           <div class="contacts__descr">
-            <h3 class="contacts__subtitle contacts__subtitle--bold">С нами легко связаться</h3>
-            <h3 class="contacts__subtitle">Здесь будет размещена подробная контактная информация</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, recusandae labore nobis temporibus neque corporis veritatis alias tempora culpa aperiam, fugit harum. Iusto eum fugiat asperiores a, deleniti ratione dolore!</p>
+            <h3 class="contacts__subtitle contacts__subtitle--bold">Хотите немного чуда?</h3>
+            <h3 class="contacts__subtitle">Оставляйте свою заявку в форме справа, и мы обязательно с вами свяжемся!</h3>
+            <p>По вопросам организации выступлений группы “Сны ДЖо” также:</p>
+            <ul>
+              <li>пишите на почту <a href="mailto:happyjoedreams@gmail.com">happyjoedreams@gmail.com</a></li>
+              <li>звоните нашему менеджеру Дарье Бородиной <br>+7-911-734-09-23</li>
+            </ul>
           </div>
           <div class="contacts__form-wr">
             <form action="" class="contacts__form">
@@ -313,5 +325,10 @@
     </footer>
   </div>
   <script src="js/tabs.js"></script>
+  <script src="js/mainmenu.js"></script>
+  <script src="js/zenscroll.js"></script>
+  <script>
+    zenscroll.setup(null, 115, null)
+  </script>
 </body>
 </html>

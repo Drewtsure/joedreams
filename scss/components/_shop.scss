@@ -1,5 +1,5 @@
 .shop {
-  padding-top: 40px;
+  padding-top: $sectionPaddingTop;
   padding-bottom: 40px;
 
   background-color: #3a3843;
@@ -42,9 +42,16 @@
 
     background: $white;
 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+
     img {
       width: 280px;
-      height: 206px;
+      height: auto;
       margin-bottom: 20px;
     }
 
@@ -53,6 +60,15 @@
 
       font-size: 16px;
       line-height: 22px;
+
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 2;
     }
 
     &-title {

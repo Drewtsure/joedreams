@@ -1,5 +1,5 @@
 .about-band {
-  padding-top: 35px;
+  padding-top: $sectionPaddingTop;
   padding-bottom: 65px;
 
   color: $dark-gray;
@@ -87,7 +87,7 @@
 
     &-more {
       position: absolute;
-      top: 0;
+      top: -5px;
       left: 0;
 
       display: none;
@@ -137,14 +137,24 @@
   }
 
   &__musician-photo {
+    width: 223px;
+    height: 223px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    text-align: center;
+
+    border-radius: 100%;
+
     img {
-      padding-top: 4px;
+      max-width: 180%;
+      max-height: 180%;
     }
 
     &:after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -5px;
       left: 0;
 
       width: 288px;
