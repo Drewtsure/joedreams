@@ -1,0 +1,1129 @@
+@charset "UTF-8";
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-weight: 100;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway Thin"), local("Raleway-Thin"), url("../fonts/raleway/ralewaythin.woff2") format("woff2"), url("../fonts/raleway/ralewaythin.woff") format("woff"), url("../fonts/raleway/ralewaythin.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 100;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway Thin Italic"), local("Raleway-ThinItalic"), url("../fonts/raleway/ralewaythinitalic.woff2") format("woff2"), url("../fonts/raleway/ralewaythinitalic.woff") format("woff"), url("../fonts/raleway/ralewaythinitalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 200;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url("../fonts/raleway/ralewayextralight.woff2") format("woff2"), url("../fonts/raleway/ralewayextralight.woff") format("woff"), url("../fonts/raleway/ralewayextralight.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 200;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway ExtraLight Italic"), local("Raleway-ExtraLightItalic"), url("../fonts/raleway/ralewayextralightitalic.woff2") format("woff2"), url("../fonts/raleway/ralewayextralightitalic.woff") format("woff"), url("../fonts/raleway/ralewayextralightitalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 300;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway Light"), local("Raleway-Light"), url("../fonts/raleway/ralewaylight.woff2") format("woff2"), url("../fonts/raleway/ralewaylight.woff") format("woff"), url("../fonts/raleway/ralewaylight.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 300;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway Light Italic"), local("Raleway-LightItalic"), url("../fonts/raleway/ralewaylightitalic.woff2") format("woff2"), url("../fonts/raleway/ralewaylightitalic.woff") format("woff"), url("../fonts/raleway/ralewaylightitalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 400;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway Regular"), local("Raleway-Regular"), url("../fonts/raleway/ralewayregular.woff2") format("woff2"), url("../fonts/raleway/ralewayregular.woff") format("woff"), url("../fonts/raleway/ralewayregular.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 400;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway Italic"), local("Raleway-Italic"), url("../fonts/raleway/ralewayitalic.woff2") format("woff2"), url("../fonts/raleway/ralewayitalic.woff") format("woff"), url("../fonts/raleway/ralewayitalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 500;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway Medium"), local("Raleway-Medium"), url("../fonts/raleway/ralewaymedium.woff2") format("woff2"), url("../fonts/raleway/ralewaymedium.woff") format("woff"), url("../fonts/raleway/ralewaymedium.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 500;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway Medium Italic"), local("Raleway-MediumItalic"), url("../fonts/raleway/ralewaymediumitalic.woff2") format("woff2"), url("../fonts/raleway/ralewaymediumitalic.woff") format("woff"), url("../fonts/raleway/ralewaymediumitalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 600;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url("../fonts/raleway/ralewaysemibold.woff2") format("woff2"), url("../fonts/raleway/ralewaysemibold.woff") format("woff"), url("../fonts/raleway/ralewaysemibold.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 600;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway SemiBold Italic"), local("Raleway-SemiBoldItalic"), url("../fonts/raleway/ralewaysemibolditalic.woff2") format("woff2"), url("../fonts/raleway/ralewaysemibolditalic.woff") format("woff"), url("../fonts/raleway/ralewaysemibolditalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url("../fonts/raleway/ralewaybold.woff2") format("woff2"), url("../fonts/raleway/ralewaybold.woff") format("woff"), url("../fonts/raleway/ralewaybold.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway Bold Italic"), local("Raleway-BoldItalic"), url("../fonts/raleway/ralewaybolditalic.woff2") format("woff2"), url("../fonts/raleway/ralewaybolditalic.woff") format("woff"), url("../fonts/raleway/ralewaybolditalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 800;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url("../fonts/raleway/ralewayextrabold.woff2") format("woff2"), url("../fonts/raleway/ralewayextrabold.woff") format("woff"), url("../fonts/raleway/ralewayextrabold.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 800;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway ExtraBold Italic"), local("Raleway-ExtraBoldItalic"), url("../fonts/raleway/ralewayextrabolditalic.woff2") format("woff2"), url("../fonts/raleway/ralewayextrabolditalic.woff") format("woff"), url("../fonts/raleway/ralewayextrabolditalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 900;
+  font-family: "Raleway";
+  font-style: normal;
+  src: local("Raleway Black"), local("Raleway-Black"), url("../fonts/raleway/ralewayblack.woff2") format("woff2"), url("../fonts/raleway/ralewayblack.woff") format("woff"), url("../fonts/raleway/ralewayblack.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: 900;
+  font-family: "Raleway";
+  font-style: italic;
+  src: local("Raleway Black Italic"), local("Raleway-BlackItalic"), url("../fonts/raleway/ralewayblackitalic.woff2") format("woff2"), url("../fonts/raleway/ralewayblackitalic.woff") format("woff"), url("../fonts/raleway/ralewayblackitalic.ttf") format("truetype"); }
+
+@font-face {
+  font-weight: normal;
+  font-family: "fontawesome";
+  font-style: normal;
+  src: url("../fonts/fontawesome/fontawesome.eot?10318820#iefix") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome.woff?10318820") format("woff"), url("../fonts/fontawesome/fontawesome.ttf?10318820") format("truetype"), url("../fonts/fontawesome/fontawesome.svg?10318820#fontawesome") format("svg");
+  src: url("../fonts/fontawesome/fontawesome.eot?10318820"); }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?10318820#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  font-weight: normal;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  font-family: "fontawesome";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-facebook:before {
+  content: "\e804"; }
+
+/* '' */
+.icon-youtube-play:before {
+  content: "\e805"; }
+
+/* '' */
+.icon-twitter:before {
+  content: "\e806"; }
+
+/* '' */
+.icon-instagram:before {
+  content: "\e807"; }
+
+/* '' */
+.icon-vkontakte:before {
+  content: "\e808"; }
+
+/* '' */
+body {
+  font-family: "Raleway", Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0; }
+
+a:hover {
+  color: #1f98ad; }
+
+.page-header {
+  position: relative;
+  min-height: 824px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #1f98ad;
+  background-color: #0d0e15;
+  background-image: url("../images/img_slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-width: 1400px; }
+  .page-header__slider-title {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    transform: translateX(-50%); }
+  .page-header__slider-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    font-size: 0;
+    line-height: 0;
+    transform: translateX(-50%); }
+    .page-header__slider-nav a {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin: 0 11px;
+      background-color: #1f98ad;
+      border-radius: 50%;
+      opacity: 0.5; }
+      .page-header__slider-nav a.active {
+        opacity: 1; }
+  .page-header__social {
+    position: absolute;
+    top: 155px;
+    right: 32px;
+    font-size: 0; }
+    .page-header__social a {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 22px;
+      color: #1f98ad; }
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .main-nav ul {
+    margin: 0;
+    padding: 18px 0 6px;
+    font-size: 0; }
+  .main-nav__item {
+    display: inline-block;
+    margin: 0 20px; }
+  .main-nav a {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5; }
+  .main-nav__item--active > a {
+    opacity: 1; }
+
+.about-band {
+  padding-top: 42px;
+  padding-bottom: 65px;
+  color: #595959;
+  background-image: url(../images/bg_about-band.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-width: 1400px; }
+  .about-band__wr {
+    width: 1180px;
+    margin: 0 auto; }
+  .about-band__title {
+    position: relative;
+    margin-bottom: 85px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+    .about-band__title:after {
+      content: "";
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      display: block;
+      width: 310px;
+      height: 54px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      transform: translateX(-50%); }
+    .about-band__title:after {
+      background-image: url(../images/pic_about-band-feather.png); }
+  .about-band__tabs-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .about-band__tabs-radio {
+    display: none; }
+  .about-band__tabs-nav a {
+    font-weight: 800;
+    font-size: 24px;
+    color: #595959;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5; }
+  .about-band__tabs-nav--active a {
+    opacity: 1; }
+  .about-band__block {
+    display: none;
+    padding-top: 40px; }
+    .about-band__block p {
+      font-size: 16px;
+      line-height: 30px;
+      color: #7c7c7c;
+      text-transform: uppercase; }
+  .about-band__block--active {
+    display: block; }
+  .about-band__block-title {
+    font-size: 24px;
+    text-transform: uppercase; }
+  .about-band__musicians-wr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .about-band__musician {
+    position: relative;
+    width: 288px;
+    margin-bottom: 220px;
+    text-align: center; }
+    .about-band__musician-more {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      display: none;
+      padding: 29px 23px;
+      text-align: left;
+      color: #ffffff;
+      background-color: rgba(240, 84, 50, 0.8); }
+    .about-band__musician-role {
+      margin-bottom: 40px;
+      font-weight: 800;
+      font-size: 24px;
+      text-transform: uppercase; }
+    .about-band__musician-name {
+      margin-bottom: 25px;
+      font-size: 24px;
+      text-transform: uppercase; }
+    .about-band__musician-desrc {
+      font-size: 16px;
+      line-height: 30px;
+      text-transform: uppercase; }
+    .about-band__musician:hover .about-band__musician-more {
+      display: block; }
+  .about-band__musician-photo {
+    width: 223px;
+    height: 223px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 100%; }
+    .about-band__musician-photo img {
+      max-width: 180%;
+      max-height: 180%; }
+    .about-band__musician-photo:after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 288px;
+      height: 460px;
+      background-repeat: no-repeat; }
+  .about-band__musician-photo--vocals:after {
+    left: -24px;
+    background-image: url(../images/pic_musician-mask-vocals.png); }
+  .about-band__musician-photo--solo:after {
+    left: 20px;
+    background-image: url(../images/pic_musician-mask-solo.png); }
+  .about-band__musician-photo--bass:after {
+    left: 18px;
+    background-image: url(../images/pic_musician-mask-bass.png); }
+  .about-band__musician-photo--drums:after {
+    left: 22px;
+    background-image: url(../images/pic_musician-mask-drums.png); }
+
+.concerts {
+  padding: 42px 0 5px;
+  color: #f3f3f3;
+  background-color: #0c1319;
+  background-image: url(../images/bg_afisha.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-width: 1400px; }
+  .concerts__wr {
+    padding: 0 150px;
+    width: 880px;
+    margin: 0 auto; }
+  .concerts__title {
+    color: #f3f3f3;
+    position: relative;
+    margin-bottom: 85px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+    .concerts__title:after {
+      content: "";
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      display: block;
+      width: 310px;
+      height: 54px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      transform: translateX(-50%); }
+    .concerts__title:after {
+      background-image: url(../images/pic_afisha-feather1.png); }
+  .concerts__list {
+    margin-bottom: 100px; }
+    .concerts__list-title {
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 22px;
+      text-transform: uppercase; }
+  .concerts__row {
+    height: 45px;
+    font-weight: 600; }
+  .concerts__cell:nth-child(1) {
+    width: 215px; }
+  .concerts__cell:nth-child(2) {
+    width: 250px; }
+  .concerts__cell:nth-child(3) {
+    width: 285px; }
+  .concerts__cell:nth-child(4) {
+    width: 215px;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .concerts a {
+    color: #f3f3f3;
+    text-decoration: none; }
+
+.media {
+  padding-top: 42px;
+  padding-bottom: 50px;
+  font-size: 24px;
+  background-image: url(../images/bg_media.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-width: 1400px; }
+  .media a {
+    font-weight: 800;
+    color: #64c9db;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .media__wr {
+    padding: 0 60px;
+    width: 1060px;
+    margin: 0 auto; }
+  .media__title {
+    color: #595959;
+    position: relative;
+    margin-bottom: 85px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+    .media__title:after {
+      content: "";
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      display: block;
+      width: 310px;
+      height: 54px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      transform: translateX(-50%); }
+    .media__title:after {
+      background-image: url(../images/pic_media-feather.png); }
+  .media__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    font-size: 0; }
+    .media__gallery-item {
+      width: 265px; }
+      .media__gallery-item img {
+        width: 100%; }
+    .media__gallery-descr {
+      margin-top: 15px;
+      font-size: 24px; }
+  .media__players:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .media__youtube-wr {
+    float: left;
+    width: 615px;
+    text-align: center; }
+  .media__youtube-descr {
+    margin-top: 20px; }
+  .media__itunes-wr {
+    float: right;
+    width: 320px;
+    text-align: center; }
+  .media__itunes-descr {
+    margin-top: 20px; }
+
+.shop {
+  padding-top: 42px;
+  padding-bottom: 40px;
+  background-color: #3a3843;
+  background-image: url(../images/bg_shop.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-width: 1400px; }
+  .shop__wr {
+    padding: 0 60px;
+    width: 1060px;
+    margin: 0 auto; }
+  .shop__title {
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 85px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+    .shop__title:after {
+      content: "";
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      display: block;
+      width: 310px;
+      height: 54px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      transform: translateX(-50%); }
+    .shop__title:after {
+      background-image: url(../images/pic_shop-feather.png); }
+  .shop__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+  .shop__item {
+    width: 280px;
+    padding: 16px 15px 30px;
+    color: #595959;
+    text-transform: uppercase;
+    background: #ffffff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column; }
+    .shop__item img {
+      width: 280px;
+      height: auto;
+      margin-bottom: 20px; }
+    .shop__item-descr {
+      padding: 0 24px;
+      font-size: 16px;
+      line-height: 22px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 2; }
+    .shop__item-title {
+      font-weight: 800;
+      font-size: 18px; }
+    .shop__item-buy:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .shop__item-price {
+      float: left;
+      padding: 10px 0;
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: lowercase; }
+    .shop__item-buybtn {
+      float: right;
+      padding: 10px;
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #64c9db; }
+  .shop__link-wr {
+    text-align: center; }
+    .shop__link-wr a {
+      font-weight: 800;
+      font-size: 24px;
+      color: #64c9db;
+      text-transform: uppercase;
+      text-decoration: none; }
+
+.contacts {
+  padding-top: 42px;
+  padding-bottom: 25px;
+  color: #595959;
+  background-color: #f3f3f3;
+  background-image: url(../images/bg_contacts.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  min-width: 1400px; }
+  .contacts:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .contacts__wr {
+    padding: 0 60px;
+    width: 1060px;
+    margin: 0 auto; }
+    .contacts__wr:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .contacts__title {
+    color: #595959;
+    position: relative;
+    margin-bottom: 85px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase; }
+    .contacts__title:after {
+      content: "";
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      display: block;
+      width: 310px;
+      height: 54px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      transform: translateX(-50%); }
+    .contacts__title:after {
+      background-image: url(../images/pic_contacts-feather.png); }
+  .contacts__descr {
+    float: left;
+    width: 520px; }
+  .contacts__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase; }
+  .contacts__subtitle--bold {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase; }
+  .contacts p {
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase; }
+  .contacts ul {
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase; }
+  .contacts__form-wr {
+    float: right;
+    width: 500px; }
+  .contacts__form-label {
+    display: block;
+    font-size: 24px;
+    line-height: 40px; }
+  .contacts__form-input, .contacts__form-textarea {
+    display: block;
+    width: 476px;
+    padding: 0 10px;
+    font-size: 24px;
+    line-height: 40px;
+    border: 2px solid #64c9db;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); }
+    .contacts__form-input:focus, .contacts__form-textarea:focus {
+      outline: none; }
+  .contacts__form-textarea {
+    resize: vertical; }
+  .contacts__submit {
+    float: right;
+    margin-top: 25px;
+    padding: 11px 20px;
+    font-weight: 800;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #64c9db;
+    border: none;
+    border-radius: 3px; }
+
+.page-footer {
+  background-color: #f3f3f3;
+  min-width: 1400px; }
+  .page-footer__wr {
+    padding: 0 60px;
+    width: 1060px;
+    margin: 0 auto; }
+  .page-footer__contacts-wr {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0; }
+  .page-footer__contacts a {
+    color: #595959;
+    text-decoration: none; }
+    .page-footer__contacts a:hover {
+      color: #1f98ad; }
+  .page-footer__social-item {
+    display: inline-block;
+    font-size: 22px;
+    color: #5e6c7b;
+    text-decoration: none; }
+
+.support {
+  padding-bottom: 10px;
+  color: #595959;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc; }
+  .support:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .support__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase; }
+  .support__title--bold {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase; }
+  .support__left {
+    float: left;
+    width: 640px;
+    padding-top: 35px; }
+  .support__right {
+    float: right;
+    width: 420px;
+    padding-top: 20px;
+    font-size: 0;
+    text-align: right; }
+  .support__money-wr {
+    position: relative;
+    display: inline-block;
+    height: 170px; }
+    .support__money-wr--ya {
+      width: 191px;
+      margin-right: 50px; }
+    .support__money-wr--web {
+      width: 150px; }
+  .support__money {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
